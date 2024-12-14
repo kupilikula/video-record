@@ -85,6 +85,7 @@ export default function App() {
                     <CameraView style={styles.camera} facing={'back'} ref={cameraRef} mode={'video'}/>
                     {/*<CameraView ref={cameraRef} style={styles.camera} />*/}
                     <View style={styles.controls}>
+
                         <Button title="Record Video" onPress={recordVideo} />
                         <Button title="Stop Recording" onPress={stopRecording} />
                         <Button title="Save Video" onPress={saveVideo} />
@@ -103,7 +104,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'green'
     },
     camera: {
-        flex: 1,
+        flex: 3,
         height: '100%',
         width: '100%'
     },
