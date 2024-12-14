@@ -11,10 +11,6 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.anandmurugan.video-record",
-      "infoPlist": {
-        "NSCameraUsageDescription": "This app requires access to the camera to record videos.",
-        "NSPhotoLibraryAddUsageDescription": "This app needs access to your photo library to save videos."
-      }
     },
     "android": {
       "adaptiveIcon": {
