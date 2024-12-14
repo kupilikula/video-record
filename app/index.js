@@ -44,15 +44,15 @@ export default function App() {
 
         try {
             // Move file to a persistent location
-            const newUri = `${FileSystem.documentDirectory}video.mp4`;
-            await FileSystem.copyAsync({
-                from: videoUri,
-                to: newUri,
-            });
-            console.log("Moved video URI:", newUri);
+            // const newUri = `${FileSystem.documentDirectory}video.mp4`;
+            // await FileSystem.copyAsync({
+            //     from: videoUri,
+            //     to: newUri,
+            // });
+            // console.log("Moved video URI:", newUri);
 
             // Attempt to save to media library
-            const asset = await MediaLibrary.createAssetAsync(newUri);
+            const asset = await MediaLibrary.createAssetAsync(videoUri);
             console.log("Video saved successfully:", asset);
         } catch (error) {
             console.error("Error saving video:", error);
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         height: '100%',
-        backgroundColor: 'green'
+        backgroundColor: 'white'
     },
     camera: {
         flex: 3,
